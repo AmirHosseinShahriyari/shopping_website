@@ -1,9 +1,9 @@
 <?php
-function connect_to_server($server,$dbname,$username,$password)
+function connect_to_server()
 {
 try
 {
-    $conn = new PDO("mysql:host=$server;dbname=$dbname",$username,$password);
+    $conn = new PDO("mysql:host=localhost;dbname=shop",'root','');
     return $conn;
 } catch(PDOException $ex)
 {
