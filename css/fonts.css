@@ -1,27 +1,27 @@
 @font-face {
     font-family: "morabaa";
-    src: url(../../fonts/morabaa/woff2/Morabba-Medium.woff2) format(woff2),
-    url(/fonts/morabaa/woff/Morabba-Medium.woff) format(woff);
+    src: url(fonts/morabaa/woff2/Morabba-Medium.woff2) format(woff2),
+    url(fonts/morabaa/woff/Morabba-Medium.woff) format(woff);
     font-weight: normal;
 }
 
 @font-face {
     font-family: morabaa;
-    src: url(/fonts/morabaa/woff2/Morabba-Bold.woff2) format(woff2),
-    url(/fonts/morabaa/woff/Morabba-Bold.woff) format(woff);
+    src: url(fonts/morabaa/woff2/Morabba-Bold.woff2) format(woff2),
+    url(fonts/morabaa/woff/Morabba-Bold.woff) format(woff);
     font-weight: bold;
 }
 
 @font-face {
     font-family: "yekan_bakh";
-    src: url(/fonts/yekanbakh/woff2/YekanBakh-Black.woff2) format(woff2),
-    url(/fonts/yekanbakh/woff/YekanBakh-Black.woff) format(woff);
+    src: url(fonts/yekanbakh/woff2/YekanBakh-Black.woff2) format(woff2),
+    url(fonts/yekanbakh/woff/YekanBakh-Black.woff) format(woff);
     font-weight:normal ;
 }
 
 @font-face {
     font-family: "yekan_bakh";
-    src: url(/fonts/yekanbakh/woff2/YekanBakh-Bold.woff2) format(woff2),
-    url(/fonts/yekanbakh/woff/YekanBakh-Bold.woff) format(woff);
+    src: url(fonts/yekanbakh/woff2/YekanBakh-Bold.woff2) format(woff2),
+    url(fonts/yekanbakh/woff/YekanBakh-Bold.woff) format(woff);
     font-weight:bold ;
 }

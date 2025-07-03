@@ -37,8 +37,9 @@ h1
     display: flex;
     align-items: center;
     justify-content: center;
+    /* height: 40%; */
+    width: 30%;
     padding:20px 30px;
-    
     flex-direction: column;
     border-radius: 13px;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
@@ -52,7 +53,6 @@ h1
 }
 input
 {
-    
     width: 100%;
     padding: 25px 15px 15px 15px;
     background-color: transparent;
@@ -89,4 +89,10 @@ input
     border-radius:25px ;
     cursor: pointer;
 
+}
+#submit
+{
+    font-family:morabaa ;
+    font-weight: bold;
+    margin-top: 20px;
 }
