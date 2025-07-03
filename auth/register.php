@@ -1,3 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/auth style/style_register.css">
+    <title>register</title>
+</head>
+
+<body>
+    <div id="register">
+        <form action="" class="register"  method="POST" >
+            <h1 class="fa-solid fa-lock"> ثبت نام</h1>
+           
+                 <div class= "input-size">
+             <div class="input" class="input_size">
+                <input type="text" id="Frist_Name"  name="Frist_Name" required 
+                value="<?= htmlspecialchars($_POST['Frist_Name'] ?? '')?>">
+                <label for="Frist_Name">نام </label>
+
+            </div>
+
+                <div class="input" class="input_size"  >
+                <input type="text" id="Last_Name"  name="Last_Name" required 
+                value="<?= htmlspecialchars($_POST['Last_Name'] ?? '')?>">
+                <label for="Last_Name"> نام خانوادگی</label>
+            </div>
+
+            </div>
+
+                 <div class="input" id="tel">
+                <input type="tel" id="tel" name="tel" required 
+                value="<?= htmlspecialchars($_POST['tel'] ?? '')?>">
+                <label for="tel"> تلفن</label>
+            </div>
+
+             <div class="input">
+                <input type="text" id="username" name="username" required placeholder=""
+                value="<?= htmlspecialchars($_POST['username'] ?? '')?>">
+                <label for="username">نام کاربری</label>
+                </div>
+
+                <div class="input">
+                <input type="password" name="password" id="password" required 
+                value="<?= htmlspecialchars($_POST['password'] ?? '')?>">
+                <label for="password">کلمه عبور</label>
+            </div>
+
+            <div id="password_condition">
+         <ul>
+                <li class="password_condition_list_item">
+                        <h6 class="password_condition_list">رمزعبور شما حداقل باید 8 کارکتر و حداکثر16 کارکتر باشد</h6>
+            </li>
+             <li class="password_condition_list_item" >
+                        <h6 class="password_condition_list"">رمزعبور شما حداقل باید دارای یک حرف بزرگ و یک حرف کوچک باشد</h6>
+            </li>
+             <li  class="password_condition_list_item" >
+                        <h6 class="password_condition_list">  رمزعبور شما باید حداقل دارای یک عددو یک کارکتر خواص  باشد(#_.!) </h6>
+            </li>
+          
+        </ul>
+            </div>            
+            <button id="submit" name="submit" type="submit" > ثبت نام</button>
+        </form>
+    </div>
+</body>
+</html>
 <?php
 include "../includes/functions.php";
 if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit']))
