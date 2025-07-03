@@ -154,18 +154,26 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit']))
             </div>
 
             </div>
+                <div class="input">
+                <input type="text" id="username" name="username" required placeholder=""
+                value="<?= htmlspecialchars($_POST['username'] ?? '')?>">
+                <label for="username">نام کاربری</label>
+                </div>
 
                  <div class="input" id="tel">
                 <input type="tel" id="tel" name="tel" required 
                 value="<?= htmlspecialchars($_POST['tel'] ?? '')?>">
                 <label for="tel"> تلفن</label>
             </div>
+            
+                <div class="input">
+                <input type="email" name="email" id="email" required 
+                value="<?= htmlspecialchars($_POST['email'] ?? '')?>">
+                <label for="email">ایمیل</label>
+            </div>
 
-             <div class="input">
-                <input type="text" id="username" name="username" required placeholder=""
-                value="<?= htmlspecialchars($_POST['username'] ?? '')?>">
-                <label for="username">نام کاربری</label>
-                </div>
+
+            
 
                 <div class="input">
                 <input type="password" name="password" id="password" required 
