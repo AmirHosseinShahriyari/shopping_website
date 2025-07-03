@@ -3,7 +3,7 @@ function connect_to_server()
 {
 try
 {
-    $conn = new PDO("mysql:host=localhost;dbname=shop",'root','');
+    $conn = new PDO("mysql:host=localhost;dbname=main",'root','');
     return $conn;
 } catch(PDOException $ex)
 {
