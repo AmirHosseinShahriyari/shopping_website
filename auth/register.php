@@ -197,8 +197,13 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit']))
             </li>
           
         </ul>
+        <a ></a>
             </div>            
+            
             <button id="submit" name="submit" type="submit" > ثبت نام</button>
+            
+            <h3 class="redirect_login">  حساب کاربری دارید؟<a href="login.php" class="redirect_login_link">وارد شوید</a></h3> 
+        
         </form>
     </div>
 </body>

@@ -96,3 +96,18 @@ input
     font-weight: bold;
     margin-top: 20px;
 }
+.redirect_login
+{
+   
+    font-weight: normal;
+    text-align: right;
+    margin-right: -60%;
+    padding-top: 20px;
+}
+.redirect_login_link
+{
+    font-family: yekan_bakh;
+    text-decoration: none;
+    color: #ed1944;
+    margin-right: 2px;
+}

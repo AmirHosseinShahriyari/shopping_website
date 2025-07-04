@@ -65,10 +65,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit']))
             <input type="password" name="password" id="password" required>
              <label for="password"> رمزعبور</label>
         </div>
+           
         <div class="submit">
             <button type="submit" name="submit" id="submit" >ورود</button>
         </div>
+         <h3 class="redirect_login">  حساب کاربری دارید؟<a href="register.php" class="redirect_login_link">وارد شوید</a></h3> 
+             
     </form>
+    
 </div>
     
 </body>
