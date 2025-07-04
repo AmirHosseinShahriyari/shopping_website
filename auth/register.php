@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit']))
     isset($_POST['username']) && !empty($_POST['username']) &&
     isset($_POST['password']) && !empty($_POST['password']) &&
     isset($_POST['confirm_password']) && !empty($_POST['confirm_password']) &&
-    // isset($_POST['email']) && !empty($_POST['email']) &&
+    isset($_POST['email']) && !empty($_POST['email']) &&
     isset($_POST['tel']) && !empty($_POST['tel']))
     {
         $name = trim(filter_input(INPUT_POST,'first_name',FILTER_SANITIZE_SPECIAL_CHARS));
@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit']))
         $username = trim(filter_input(INPUT_POST,'username',FILTER_SANITIZE_SPECIAL_CHARS));
         $password = $_POST['password'];
         $confirmPassword = $_POST['confirm_password'];
-        // $email = $_POST['email'];
+        $email = $_POST['email'];
         $tel = $_POST['tel'];
         $tel = trim($tel);
         $tel = str_replace(['-', ' '], '', $tel);
@@ -62,19 +62,19 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit']))
 
         //confirm email
 
-        // if(!filter_var($email,FILTER_VALIDATE_EMAIL))
-        // {
-        //     $errors[] = "ایمیل شما نامعتبر است";
-        // }
-        // else
-        // {
-        //     $stmt = $conn->prepare("SELECT COUNT(*) FROM users WHERE email=?");
-        //     $stmt->execute([$email]);
-        //     if($stmt->fetchColumn() > 0)
-        //     {
-        //         $errors[] = "ایمیل شما قبلا ثبت شده";
-        //     }
-        // }
+        if(!filter_var($email,FILTER_VALIDATE_EMAIL))
+        {
+            $errors[] = "ایمیل شما نامعتبر است";
+        }
+        else
+        {
+            $stmt = $conn->prepare("SELECT COUNT(*) FROM users WHERE email=?");
+            $stmt->execute([$email]);
+            if($stmt->fetchColumn() > 0)
+            {
+                $errors[] = "ایمیل شما قبلا ثبت شده";
+            }
+        }
         // confirm tel
         if(!preg_match('/^09\d{9}$/', $tel))
         {
@@ -103,7 +103,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit']))
         {
             try
             {
-                $email = "a@gmail.com";
                 $hashed_password = password_hash($password,PASSWORD_DEFAULT);
                 $query = "INSERT INTO users (name,last_name,username,password,email,tel) VALUES (?,?,?,?,?,?)";
                 $stmt = $conn->prepare($query);
@@ -173,8 +172,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit']))
             </div>
 
 
-            
-
                 <div class="input">
                 <input type="password" name="password" id="password" required 
                 value="<?= htmlspecialchars($_POST['password'] ?? '')?>">
@@ -196,7 +193,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit']))
                         <h6 class="password_condition_list"">رمزعبور شما حداقل باید دارای یک حرف بزرگ و یک حرف کوچک باشد</h6>
             </li>
              <li  class="password_condition_list_item" >
-                        <h6 class="password_condition_list">  رمزعبور شما باید حداقل دارای یک عددو یک کارکتر خواص  باشد(#_.!) </h6>
+                        <h6 class="password_condition_list">  رمزعبور شما باید حداقل دارای یک عددو یک کارکتر خاص  باشد(#_.!) </h6>
             </li>
           
         </ul>
