@@ -18,6 +18,7 @@
     </div>
     <div class="sidebar_list">
             <ul>
+            <li><a href=""><i class="fa-solid fa-house"></i>صفحه اصلی</a> </li>
             <li><a href=""><i class="fa-solid fa-basket-shopping list_icon"></i>سفارشات من</a> </li>
             <li><a href=""><i class="fa-solid fa-receipt list_icon"></i>تراکنش‌ها</a></li>
             <li><a href=""><i class="fa-solid fa-heart-circle-check list_icon"></i>محصولات مورد علاقه</a></li>
@@ -26,7 +27,7 @@
             <li><a href=""><i class="fa-solid fa-tags list_icon"></i>کوپن‌ها</a></li>
             <li><a href=""><i class="fa-solid fa-ticket list_icon"></i>تیکت‌</a></li>
             <li><a href=""><i class="fa-solid fa-bell list_icon"></i>اعلان‌ها</a></li>           
-            <li><a href=""><i class="fa-solid fa-right-from-bracket list_icon"></i> خروج از حساب </a></li>
+            <li><a href="../auth/logout.php"><i class="fa-solid fa-right-from-bracket list_icon"></i> خروج از حساب </a></li>
 
         </ul>
     </div>

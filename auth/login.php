@@ -1,5 +1,6 @@
 <?php
 include "../includes/functions.php";
+include "../includes/fav_icon.php"; 
 session_start();
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit']))
 {
