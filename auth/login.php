@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit']))
         echo "بعضی از فیلد ها خالی است";
     }
     $conn = connect_to_server();
-    $query = 'SELECT password FROM users WHERE username=?';
+    $query = 'SELECT * FROM users WHERE username=?';
     $stmt = $conn->prepare($query);
     $stmt->execute([$username]);
     if($stmt->rowCount() > 0)
@@ -31,6 +31,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit']))
     if(password_verify($password,$hash_password))
     {
         $_SESSION['state_login'] = true;
+        $_SESSION['user_id'] = $user_information['id'];
+        $_SESSION['username'] = $user_information['username'];
         header("location: ../user/dashbord.php");
         exit;
     }
