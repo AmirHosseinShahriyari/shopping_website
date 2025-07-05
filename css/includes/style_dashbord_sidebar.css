@@ -34,7 +34,6 @@ body
     
 
 }
-
  .user_name a
  {
     color: #000;
@@ -44,8 +43,8 @@ body
  }
 .user_img
 {
-     width: 5vw;
-    height: 10vh;
+     width: 51px;
+    height: 51px;
     border-radius: 50%;
     border: 0.5px solid black;
 }
