@@ -11,8 +11,11 @@
 </head>
 <body>
     <div class="left_sidebar">
-       
-    <a href=""> <img class="user_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrBp4rAadRiXmk6NWl3redkvGJgWGDkBT4vA&s" alt="ناحیه کاربری"></a>
+        <div class="profile_info">
+            
+       <h3 class="user_name"><a href="../user/profile.php"> عرفان حامدی</a></h3>
+    <a href="../user/profile.php"> <img class="user_img" src="../assets/image & icon/user icon.png" alt="ناحیه کاربری"></a>
+    </div>
     <div class="sidebar_list">
             <ul>
             <li><a href=""><i class="fa-solid fa-basket-shopping list_icon"></i>سفارشات من</a> </li>
