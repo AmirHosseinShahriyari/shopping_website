@@ -60,7 +60,7 @@ include "../includes/fav_icon.php";
 
     </div>
     <div class="Last_purchase_container">
-
+    
     </div>
      </div>
 
