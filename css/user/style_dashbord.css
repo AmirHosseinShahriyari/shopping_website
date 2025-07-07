@@ -14,9 +14,9 @@ body
     max-height: 80vh;
     background-color:#ffff ;
     border-radius: 12px;
-    /* justify-content: center;
-    align-items: center; */
-    
+    justify-content: center;
+    align-items: center;
+
 }
 .Quick_access_container
 {
@@ -30,7 +30,7 @@ body
     align-items: center;
     border: 0.1rem solid rgba(255, 0, 0, 0.26);
     box-shadow: 16px 19px 18px -9px rgba(0,0,0.1,0.1);
-    
+     
 }
 .Quick_access_item
 {
@@ -97,6 +97,7 @@ body
     border: 2px solid rgba(255, 0, 0, 0.26);
     border-radius: 12px;
     box-shadow: 16px 19px 18px -9px rgba(0,0,0.1,0.1);
-     margin: 2.3rem 0.5rem 0 0; 
-
+    margin: 2.3rem 0.5rem 0 0;
+    position: relative;
+    flex-direction: row;
 }
