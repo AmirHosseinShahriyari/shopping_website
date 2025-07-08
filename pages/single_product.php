@@ -21,6 +21,7 @@
         
     <h2 class="title_product"> تایتل محصول</h2>
         <div class="attribute_product">
+            <button class="color_attribute">ضضض</button>
         </div>
 
     </div>

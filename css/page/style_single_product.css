@@ -31,5 +31,10 @@ body
     margin:2.2em 1rem 0 0 ;
     font-size: 2.1rem;
     font-weight: bold;
+
+}
+.attribute_product
+{
+    display: flex;
 }
 
