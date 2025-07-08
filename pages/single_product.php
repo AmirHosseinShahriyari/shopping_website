@@ -12,20 +12,22 @@
 <body>
     <div class="single_product_container">
 
-    <div class="product_img">
+    <!-- <div class="product_img_container">
+    </div> -->
+<img class="product_img" src="../assets/image & icon/product_img.webp" alt="عکس محصول">
 
-    <img src="../assets/image & icon/product_img.webp" alt="عکس محصول">
-    
-    </div>
 
     <div class="title_product_container">
-
-    <h2 class="title_product"> تاتل محصول</h2>
+        
+    <h2 class="title_product"> تایتل محصول</h2>
+        <div class="attribute_product">
+        </div>
 
     </div>
 
     <div class="add_to_cart_container">
-        <h2></h2>
+        <h2 class="product_price">23000</h2>
+        <button class="add_to_cart_btn"></button>
     </div>
 
     </div>
