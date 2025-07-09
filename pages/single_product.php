@@ -14,16 +14,17 @@
 
     <!-- <div class="product_img_container">
     </div> -->
-<img class="product_img" src="../assets/image & icon/product_img.webp" alt="عکس محصول">
+<img class="product_img" src="../assets/image & icon/no-img-.jpg" alt="عکس محصول">
 
 
     <div class="title_product_container">
-        
     <h2 class="title_product"> تایتل محصول</h2>
         <div class="attribute_product">
-            <button class="color_attribute">ضضض</button>
+            <button class="color_attribute"></button>
+             <button class="color_attribute"></button>
+             <button class="color_attribute"></button>
+             <button class="color_attribute"></button>
         </div>
-
     </div>
 
     <div class="add_to_cart_container">
